@@ -14,3 +14,7 @@
   background: url('./images/background.png') no-repeat no-repeat center;
   background-size: cover;
 }
+
+.header__text {
+  font-family: 'Inter', sans-serif;
+}
