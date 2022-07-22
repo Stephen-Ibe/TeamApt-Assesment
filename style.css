@@ -23,12 +23,15 @@ body {
 .header__text {
   font-family: 'Inter', sans-serif;
 }
+
 .hero {
   font-family: 'Inter', sans-serif;
 }
+
 .hero__text {
   font-family: 'Poppins', sans-serif;
 }
+
 .hero__instructions {
   background: linear-gradient(
     180deg,
@@ -40,9 +43,11 @@ body {
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
 }
+
 .coin__container {
   overflow: hidden;
 }
+
 .flare {
   animation-duration: 40s;
   animation-iteration-count: infinite;
@@ -50,13 +55,35 @@ body {
   animation-timing-function: linear;
   transform: translateX(4%);
 }
+
 .coin_pot {
   /* transform: translateX(160%); */
   animation: slideCoinPot 4s ease-in-out both;
 }
+
 .star1 {
   animation: star1 5s ease-in-out infinite alternate,
     starMotion 5s linear infinite;
+}
+
+.star2 {
+  animation: star2 8s ease-in-out 0.5s infinite alternate,
+    starMotion 8s linear 0.5s infinite;
+}
+
+.star3 {
+  animation: star1 10s ease-in-out 3s infinite alternate,
+    starMotion 10s linear 3s infinite;
+}
+
+.star5 {
+  animation: star2 8s ease-in-out 7s infinite alternate,
+    starMotion 8s linear 7s infinite;
+}
+
+.star6 {
+  animation: star1 5s ease-in-out 1s infinite alternate,
+    starMotion 5s linear 1s infinite;
 }
 
 /* KEYFRAMES */
@@ -66,6 +93,7 @@ body {
     transform: translateY(250%) translateX(160%);
     webkit-transform: translateY(250%) translateX(160%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(160%);
@@ -157,40 +185,39 @@ body {
   }
 }
 
-  @-webkit-keyframes star2 {
-    0% {
-      margin-left: 80px;
-    }
-
-    35% {
-      margin-left: 0px;
-    }
-
-    75% {
-      margin-left: 40px;
-    }
-
-    100% {
-      margin-left: 0px;
-    }
+@-webkit-keyframes star2 {
+  0% {
+    margin-left: 80px;
   }
 
-  @keyframes star2 {
-    0% {
-      margin-left: 80px;
-    }
+  35% {
+    margin-left: 0px;
+  }
 
-    35% {
-      margin-left: 0px;
-    }
+  75% {
+    margin-left: 40px;
+  }
 
-    75% {
-      margin-left: 40px;
-    }
+  100% {
+    margin-left: 0px;
+  }
+}
 
-    100% {
-      margin-left: 0px;
-    }
+@keyframes star2 {
+  0% {
+    margin-left: 80px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  75% {
+    margin-left: 40px;
+  }
+
+  100% {
+    margin-left: 0px;
   }
 }
 
