@@ -8,7 +8,7 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-
+html,
 #body {
   height: 100vh;
   background: url('./images/background.png') no-repeat no-repeat center;
@@ -16,5 +16,22 @@
 }
 
 .header__text {
+  font-family: 'Inter', sans-serif;
+}
+.hero {
+  font-family: 'Inter', sans-serif;
+}
+.hero__text {
+  font-family: 'Poppins', sans-serif;
+}
+.hero__instructions {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.39) -213.5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
   font-family: 'Inter', sans-serif;
 }
