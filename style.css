@@ -43,7 +43,7 @@ body {
 .flare {
   animation-duration: 40s;
   animation-iteration-count: infinite;
-  /* animation-name: rotate-flare; */
+  animation-name: rotateFlare;
   animation-timing-function: linear;
   transform: translateX(4%);
 }
@@ -51,7 +51,7 @@ body {
   transform: translateX(160%);
   animation: slideCoinPot 4s ease-in-out both;
 }
-
+/* KEYFRAMES */
 @keyframes slideCoinPot {
   0% {
     opacity: 0;
@@ -65,7 +65,7 @@ body {
   }
 }
 
-@-webkit-keyframes rotate-flare {
+@-webkit-keyframes rotateFlare {
   from {
     transform: translate(4%) rotate(0deg);
     webkit-transform: translate(4%) rotate(0deg);
@@ -77,7 +77,7 @@ body {
   }
 }
 
-@keyframes rotate-flare {
+@keyframes rotateFlare {
   from {
     transform: translate(4%) rotate(0deg);
     webkit-transform: translate(4%) rotate(0deg);
@@ -88,3 +88,4 @@ body {
     webkit-transform: translate(4%) rotate(0deg);
   }
 }
+/* END OF KEYFRAMES */
