@@ -57,7 +57,7 @@ body {
 }
 
 .coin_pot {
-  /* transform: translateX(160%); */
+  /* transform: translateX(-50%); */
   animation: slideCoinPot 4s ease-in-out both;
 }
 
