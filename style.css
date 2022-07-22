@@ -10,10 +10,12 @@
 }
 html,
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url('./images/background.png') no-repeat no-repeat center;
   background-size: cover;
   position: relative;
+  background-color: #161848;
+  overflow: hidden;
 }
 
 .header__text {
@@ -35,6 +37,9 @@ body {
     inset 0px 2px 0px rgba(255, 255, 255, 0.24);
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
+}
+.coin__container {
+  overflow: hidden;
 }
 .flare {
   animation-duration: 60s;
