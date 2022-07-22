@@ -1,5 +1,7 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@300;700&display=swap');
 
+/* Style Reset  */
 *,
 *::after,
 *::before {
@@ -7,6 +9,7 @@
   padding: unset;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100vh;
@@ -43,14 +46,15 @@ body {
 .flare {
   animation-duration: 40s;
   animation-iteration-count: infinite;
-  animation-name: rotateFlare;
+  /* animation-name: rotateFlare; */
   animation-timing-function: linear;
   transform: translateX(4%);
 }
 .coin_pot {
-  transform: translateX(160%);
+  /* transform: translateX(160%); */
   animation: slideCoinPot 4s ease-in-out both;
 }
+
 /* KEYFRAMES */
 @keyframes slideCoinPot {
   0% {
