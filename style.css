@@ -6,11 +6,11 @@
   margin: unset;
   padding: unset;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  /* overflow: hidden;   */
 }
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: url('./images/background.png') no-repeat no-repeat center;
   background-size: cover;
   position: relative;
@@ -35,4 +35,37 @@ body {
     inset 0px 2px 0px rgba(255, 255, 255, 0.24);
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
+}
+.flare {
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  /* animation-name: rotate-flare; */
+  animation-timing-function: linear;
+  transform: translateX(4%);
+}
+.coin_pot {
+  transform: translateX(160%);
+}
+@-webkit-keyframes rotate-flare {
+  from {
+    transform: translate(4%) rotate(0deg);
+    webkit-transform: translate(4%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(4%) rotate(-360deg);
+    webkit-transform: translate(4%) rotate(0deg);
+  }
+}
+
+@keyframes rotate-flare {
+  from {
+    transform: translate(4%) rotate(0deg);
+    webkit-transform: translate(4%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(4%) rotate(-360deg);
+    webkit-transform: translate(4%) rotate(0deg);
+  }
 }
