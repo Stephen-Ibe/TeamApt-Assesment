@@ -54,6 +54,10 @@ body {
   /* transform: translateX(160%); */
   animation: slideCoinPot 4s ease-in-out both;
 }
+.star1 {
+  animation: random-star-1 5s ease-in-out infinite alternate,
+    starMotion 5s linear infinite;
+}
 
 /* KEYFRAMES */
 @keyframes slideCoinPot {
@@ -92,4 +96,65 @@ body {
     webkit-transform: translate(4%) rotate(0deg);
   }
 }
+
+@-webkit-keyframes starMotion {
+  0% {
+    bottom: -15px;
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 35%;
+    opacity: 0;
+  }
+}
+
+@keyframes starMotion {
+  0% {
+    bottom: -15px;
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 35%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes random-star-1 {
+  0% {
+    margin-left: -20px;
+  }
+
+  35% {
+    margin-left: 65px;
+  }
+
+  100% {
+    margin-left: 5px;
+  }
+}
+
+@keyframes random-star-1 {
+  0% {
+    margin-left: -20px;
+  }
+
+  35% {
+    margin-left: 65px;
+  }
+
+  100% {
+    margin-left: 5px;
+  }
+}
+
 /* END OF KEYFRAMES */
