@@ -51,14 +51,14 @@ body {
 .flare {
   animation-duration: 40s;
   animation-iteration-count: infinite;
-  /* animation-name: rotateFlare; */
+  animation-name: rotateFlare;
   animation-timing-function: linear;
   transform: translateX(4%);
 }
 
 .coin_pot {
   /* transform: translateX(-50%); */
-  animation: slideCoinPot 4s ease-in-out both;
+  animation: slideCoinPot 3s ease-in-out both;
 }
 
 .star1 {
